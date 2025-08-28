@@ -1,0 +1,23 @@
+
+[workspace]
+resolver = "2"
+members = [
+    "receive_handler",
+    "lib",
+    "sqs_handler",
+    "daily_data_sync_handler",
+]
+
+
+[workspace.dependencies]
+anyhow = "1.0.99"
+aws-config = "1.8.5"
+aws-smithy-types = "1.2.2"
+tokio = { version = "1.47.1", features = ["macros", "rt-multi-thread"] }
+serde = { version = "1.0.219", features = ["derive"] }
+uuid = { version = "1.10.0", features = ["v4"] }
+axum = "0.8.4"
+aws_lambda_events = "0.15.1"
+serde_json = "1.0.142"
+lambda_runtime = "0.14.3"
+chrono = "0.4.41"
