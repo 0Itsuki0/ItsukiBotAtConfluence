@@ -61,8 +61,19 @@ Also, since we will have a lambda to perform some incremental data synchronizati
 For more details on setting up Slack Events API, please check out my blog [here](https://medium.com/@itsuki.enjoy/trigger-lambda-from-slack-messages-with-slack-events-api-d73d80d8ae97).
 
 
-### Confirm
+## Test
 Above is all we need to get the Bot running.
 <br>
 Head to the Slack Workspace that we have installed the bot on, select any channel, and send a message mentioning the bot!
 If this is your first time @ the bot in a specific channel, you will be prompted to add it as member! The message will be delivered after that!
+
+
+## What's Next?
+#### What if we want our bot to use some other data sources? Or maybe a combination of multiple?
+Add those as the datasources to the same Knowledge base, and without changing a single line of code, our slack bot will now be able to answer the request using ALL those sources!
+
+And the data from those sources will also be AUTOMATICALLY ingested daily as well!
+
+
+#### Want more precise responses based off a specific use case
+If Simply Retrieving from the knowledge base and Generate the response doesn’t seem to be enough, and you want responses more tailor-made and Better matching your scenarios / usages, you can create an Agent with the knowledge base and invoke the agent instead, for example, [Strands with Knowledge base Workflow](https://strandsagents.com/latest/documentation/docs/examples/python/knowledge_base_agent/)!
